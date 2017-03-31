@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <!-- Scene... -->
+	<!-- Scene... -->
 
 	<a-scene stats="false" vr-mode-ui="enabled: true" editor>
 
@@ -29,6 +29,9 @@
 
 			<a-asset-item id="penguin-obj" src="assets/modeles/penguin/penguin.obj"></a-asset-item>
 			<a-asset-item id="penguin-mtl" src="assets/modeles/penguin/penguin.mtl"></a-asset-item>
+
+			<a-asset-item id="maison-obj" src="assets/modeles/maison/maison.obj"></a-asset-item>
+			<a-asset-item id="maison-mtl" src="assets/modeles/maison/maison.mtl"></a-asset-item>
 			<!-- mixin layout -->
 
 
@@ -55,8 +58,9 @@
 		<a-obj-model id="penguin" src="#penguin-obj" mtl="#penguin-mtl" rotation="-90 0 0" position="2.5 0 2.5">
 		</a-obj-model>
 
-		<a-obj-model id="bibliotheque" src="#bookcase-obj" mtl="#bookcase-mtl" rotation="0 0 0" position="0.0 0.0 -1.0" scale="0.04 0.04 0.04">
+		<a-obj-model id="maison" src="#maison-obj" mtl="#maison-mtl" rotation="-90 0 0" position="10 0.5 10">
 		</a-obj-model>
+		<!--<a-collada-model src="#maison-dae"></a-collada-model>-->
 
 		<a-entity text="text: toto" position="0.0 1.0 0.2"></a-entity>
 
@@ -65,27 +69,7 @@
 		<a-entity id="poster01" geometry="primitive: plane ; height: 0.6 ; width: 1.0" material="src: url(assets/images/pano/tintamarre.jpg)"
 		    position="0.0 2.0 0.1"></a-entity>
 		-->
-		<!-- 4 chaises -->
 
-		<a-obj-model id="chaise-1" src="#chair1-obj" mtl="#chair1-mtl" rotation="0 0 0" position="5.0 0.0 1.0" scale="0.75 0.75 0.75">
-		</a-obj-model>
-
-		<a-obj-model id="chaise-2" src="#chair1-obj" mtl="#chair1-mtl" rotation="0 0 0" position="6.0 0.0 1.0" scale="0.75 0.75 0.75">
-		</a-obj-model>
-
-		<a-obj-model id="chaise-3" src="#chair1-obj" mtl="#chair1-mtl" rotation="0 0 0" position="7.0 0.0 1.0" scale="0.75 0.75 0.75">
-		</a-obj-model>
-
-
-		<!-- une table -->
-
-		<a-obj-model id="table-1" src="#table1-obj" mtl="#table1-mtl" rotation="0 0 0" position="6.0 0.0 1.5" scale="1.0 0.65 0.75">
-		</a-obj-model>
-
-		<!-- un sofa -->
-
-		<a-obj-model id="sofa-1" src="#sofa-obj" mtl="#sofa-mtl" rotation="0 45 0" position="-2.0 0.5 3.0" scale="0.5 0.3 0.3">
-		</a-obj-model>
 
 	</a-scene>
 
