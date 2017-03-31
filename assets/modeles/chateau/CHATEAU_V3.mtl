@@ -3,8 +3,8 @@ illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd -s 0.0833333 0.0833333 acbcd5474ba2e4d37029c1aac8025956.jpg
-bump -s 0.0833333 0.0833333 acbcd5474ba2e4d37029c1aac8025956.jpg -bm -0.02
+map_Kd -s 0.0833333 0.0833333 ground.jpg
+bump -s 0.0833333 0.0833333 ground.jpg -bm -0.02
 Ni 1.00
 Ks 0.50 0.50 0.50
 newmtl blinn2SG
