@@ -2,19 +2,37 @@
 ## Alias OBJ Material File
 # Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
 
-newmtl Brick_Rough_Tan
+newmtl FrontColor
 Ka 0.000000 0.000000 0.000000
-Kd 0.654902 0.552941 0.321569
+Kd 1.000000 1.000000 1.000000
 Ks 0.330000 0.330000 0.330000
-map_Kd maison/Brick_Rough_Tan.jpg
 
 newmtl BackColor
 Ka 0.000000 0.000000 0.000000
 Kd 0.643137 0.698039 0.733333
 Ks 0.330000 0.330000 0.330000
 
-newmtl FrontColor
+newmtl seamless_wall
 Ka 0.000000 0.000000 0.000000
-Kd 1.000000 1.000000 1.000000
+Kd 0.819608 0.819608 0.819608
 Ks 0.330000 0.330000 0.330000
+map_Kd maison/seamless_wall.jpg
+
+newmtl wood_seamless
+Ka 0.000000 0.000000 0.000000
+Kd 0.380392 0.286275 0.200000
+Ks 0.330000 0.330000 0.330000
+map_Kd maison/wood_seamless.jpg
+
+newmtl marble_seamless
+Ka 0.000000 0.000000 0.000000
+Kd 0.956863 0.952941 0.937255
+Ks 0.330000 0.330000 0.330000
+map_Kd maison/marble_seamless.jpg
+
+newmtl tiger2
+Ka 0.000000 0.000000 0.000000
+Kd 0.525490 0.313725 0.117647
+Ks 0.330000 0.330000 0.330000
+map_Kd maison/tiger2.jpg
 
