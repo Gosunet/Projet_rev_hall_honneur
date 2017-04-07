@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>A-FRAME : Basic scene</title>
+	<style>
+   		 canvas {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+    	}
+	</style>
+    <script src="dist/aframe-master.min.js"></script>
+ </head>
+ <body>
+
+  <a-scene id="scene">
+        <a-camera position="3 1.7 3"></a-camera>
+	
+
+
+<!--	<a-assets>
+
+				<a-mixin id="box" geometry="primitive: box ; depth: .125; height: .125; width:.125"
+				></a-mixin>
+				
+				<a-asset-item id="door-obj" src="assets/modeles/door/door.obj"></a-asset-item>
+				<a-asset-item id="door-mtl" src="assets/modeles/door/door.mtl"></a-asset-item>
+
+
+
+			
+	</a-assets>
+
+
+
+	<a-obj-model id="door" src="#door-obj" mtl="#door-mtl" rotation="0 0 0" position="0 0 0" scale="0.01 0.01 0.01" material="side: double; src: url(assets/modeles/door.jpg) repeat: 0.1 0.1" >
+        </a-obj-model>-->
+
+
+
+	<!-- mur de gauche -->
+        <a-plane rotation="0 90 0" position="-3.2 2.5 0" height="5" width="4.99" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	
+	 <a-plane rotation="0 90 0" position="-3 2.5 -2.78" height="5" width="0.6" color="#CBC" scale="" visible="" material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	 <a-plane rotation="0 0 0" position="-3.1 2.5 -2.49" height="5" width="0.2" color="#CBC" scale="" visible="" material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	
+         <a-plane rotation="0 -90 0" position="3 2.5 -2.78" height="5" width="0.6" color="#CBC" scale="" visible="" material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	 <a-plane rotation="0 0 0" position="3.1 2.5 -2.49" height="5" width="0.2" color="#CBC" scale="" visible="" material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	<!-- mur entrée -->
+	  <a-plane rotation="0 180 0" position="-2.45 2.5 2.49" height="5" width="1.5" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	  <a-plane rotation="0 180 0" position="2.45 2.5 2.49" height="5" width="1.5" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	  <a-plane rotation="0 0 0" position="-2.45 2.5 2.49" height="5" width="1.5" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	  <a-plane rotation="0 0 0" position="2.45 2.5 2.49" height="5" width="1.5" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	<!-- mur ESCALIER -->
+	  <a-plane rotation="0 -90 0" position="1.7 2.5 2.95" height="5" width="0.92" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	  <a-plane rotation="0 90 0" position="-1.7 2.5 2.95" height="5" width="0.92" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	  
+	  <a-plane rotation="0 0 0" position="2.09 2.5 3.41" height="5" width="0.8" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	  <a-plane rotation="0 0 0" position="-2.09 2.5 3.41" height="5" width="0.8" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+
+	  <a-plane rotation="0 90 0" position="-2.48 2.125 6.1" height="5.75" width="5.4" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+	  <a-plane rotation="0 -90 0" position="2.50 2.125 6.1" height="5.75" width="5.4" color="#FFF" scale="" visible=""  material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+
+ 
+<!-- 	 <a-plane rotation="0 0 0" position="3.1 2.5 -2.49" height="5" width="0.2" color="#CBC" scale="" visible="" material="" geometry=""></a-plane> -->
+
+        <!-- le sol -->
+	 <a-plane rotation="-90 0 0" position="0 0 0" height="4.99" width="6.40" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/tapis2.jpg) repeat: 1 1" geometry=""></a-plane>
+	 <a-plane rotation="-90 0 0" position="0 0 -2.79" height="0.6" width="6.00" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/carrelage.jpg) repeat: 1 1" geometry=""></a-plane>
+      
+	<!-- plafond -->
+	 <a-plane rotation=" 90 0 0" position="0 5 0" height="4.99" width="6.40" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/plafond.jpg) repeat: 1 1" geometry=""></a-plane>
+	 <a-plane rotation=" 90 0 0" position="0 5 -2.79" height="0.6" width="6.00" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>
+       <a-plane rotation="90 0 0" position="0 5 7" height="10" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/plafonds.jpg) repeat: 1 1" geometry=""></a-plane>--&gt;
+	
+	<!-- ESCALIER -->
+  
+       <a-plane rotation="-90 0 0" position="0 0 2.95" height="0.92" width="3.4" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/carrelage.jpg) repeat: 1 1" geometry=""></a-plane>--&gt;
+       
+       <a-plane rotation="-90 0 0" position="0 0 3.7" height="0.60" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/marbremarche.jpg) repeat: 0.1 0.1" geometry=""></a-plane>--&gt;
+
+       <a-plane rotation="0 0 0" position="0 -0.125 4" height="0.25" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/marbremarche.jpg) repeat: 0.1 0.1" geometry=""></a-plane>--&gt;
+       <a-plane rotation="-90 0 0" position="0 -0.25 4.3" height="0.6" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/marbremarche.jpg) repeat: 0.1 0.1" geometry=""></a-plane>--&gt;
+
+       <a-plane rotation="0 0 0" position="0 -0.375 4.6" height="0.25" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/marbremarche.jpg) repeat: 0.1 0.1" geometry=""></a-plane>--&gt;
+       <a-plane rotation="-90 0 0" position="0 -0.5 4.9" height="0.6" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/marbremarche.jpg) repeat: 0.1 0.1" geometry=""></a-plane>--&gt;
+       
+       <a-plane rotation="0 0 0" position="0 -0.625 5.2" height="0.25" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/marbremarche.jpg) repeat: 0.1 0.1" geometry=""></a-plane>--&gt;
+       <a-plane rotation="-90 0 0" position="0 -0.75 7" height="3.6" width="5" color="#FFF" scale="" visible="" material="side: double; src: url(assets/textures/marbre.jpg) repeat: 100 20" geometry=""></a-plane>--&gt;
+
+    
+        <!-- Une oeuvre d'art exposée sur un podium -->
+<!--        <a-box  position = "5.0 0.5 5.0">
+          <a-sphere radius="1.5" position="0.0 1.75 0.0" >
+            <a-sphere radius="1.0" position="0 1.25 0"></a-sphere>
+          </a-sphere>
+        </a-box>-->
+
+     	<!-- on place un repère dans la scène -->
+        <!-- ================================ -->
+  
+
+
+<!--  		<a-cylinder height="3.0" color="green"  radius="0.05" position="0.0 1.5 0.0"></a-cylinder>
+  		<a-cylinder height="3.0" color="red"    radius="0.05" position="1.5 0.0 0.0"  rotation="0 0 -90"></a-cylinder>
+  		<a-cylinder height="3.0" color="blue"   radius="0.05" position="0.0 0.0 1.5"  rotation="90 0 0"></a-cylinder>
+    
+		<a-sphere radius="0.2" color="red"   position="4 0 0"></a-sphere>
+		<a-sphere radius="0.2" color="green" position="0 4 0"></a-sphere>
+		<a-sphere radius="0.2" color="blue"  position="0 0 4"></a-sphere>-->
+
+  </a-scene>
+
+
+  <script>
+    var canvas = document.querySelector("canvas");
+    canvas.remove();
+    var sceneEl = document.getElementById("scene"); 
+    var el = document.createElement("a-entity") ; 
+    
+  </script>
+
+ </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>A-FRAME : Basic scene</title>
+	<style>
+   		 canvas {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+			background-color: #aa0000;
+    	}
+	</style>
+    <script src="dist/aframe-master.min.js"></script>
+ </head>
+ <body>
+
+  <a-scene>
+
+        <camera position="0 1.7 5.0"> </camera>
+
+     	<!-- on place un repère dans la scène -->
+  
+  		<a-sphere radius="0.2" ></a-sphere>
+  		<a-cylinder height="3.0" color="green"  radius="0.05" position="0.0 1.5 0.0"></a-cylinder>
+  		<a-cylinder height="3.0" color="red"    radius="0.05" position="1.5 0.0 0.0"  rotation="0 0 -90"></a-cylinder>
+  		<a-cylinder height="3.0" color="blue"   radius="0.05" position="0.0 0.0 1.5"  rotation="90 0 0"></a-cylinder>
+    
+		<a-sphere radius="0.2" color="red"   position="4 0 0"></a-sphere>
+		<a-sphere radius="0.2" color="green" position="0 4 0"></a-sphere>
+		<a-sphere radius="0.2" color="blue"  position="0 0 4"></a-sphere>
+
+  </a-scene>
+
+ </body>
+</html>
